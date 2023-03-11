@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+@layer base {
+    body{
+        @apply scrollbar-track-teal-700 scrollbar-thumb-teal-700;
+    }
+}
