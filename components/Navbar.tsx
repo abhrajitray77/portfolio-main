@@ -2,12 +2,12 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="w-auto right-10 absolute z-50">
-        <ul className="flex space-x-10 py-8 text-white font-bold">
-          <li>About Me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+    <div className="w-auto flex justify-end mr-10 z-50">
+        <ul className="flex space-x-10 py-8 font-bold">
+          <li className='nav-item'>About Me</li>
+          <li className='nav-item'>Skills</li>
+          <li className='nav-item'>Projects</li>
+          <li className='nav-item'>Contact</li>
         </ul>
     </div>
   )

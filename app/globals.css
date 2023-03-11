@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     body{
-        @apply scrollbar-track-teal-700 scrollbar-thumb-teal-700;
+        @apply bg-slate-100;
+    }
+}
+
+@layer components {
+    .nav-item {
+        @apply cursor-pointer
     }
 }
