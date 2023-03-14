@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="w-auto flex justify-end mr-10 z-50">
-        <ul className="flex space-x-10 py-8 font-bold">
+    <div className="w-auto flex justify-end mr-3 md:mr-10 z-50">
+        <ul className="flex space-x-4 md:space-x-10 py-8 font-bold">
           <li className='nav-item'>About Me</li>
           <li className='nav-item'>Skills</li>
           <li className='nav-item'>Projects</li>
