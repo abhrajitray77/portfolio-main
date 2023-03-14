@@ -8,8 +8,8 @@ import propic from "../public/imgs/profile-pic3.png";
 const Banner = () => {
   return (
     <div className="relative h-screen w-auto">
-      <div className="absolute flex top-40 left-32 z-10">
-        <div className="h-[500px] w-[500px] ">
+      <div className="flex top-40 left-32 z-10">
+        <div className="md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px] ">
           <Image
             className="drop-shadow-2xl"
             src={propic}
