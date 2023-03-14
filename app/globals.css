@@ -10,6 +10,9 @@
 
 @layer components {
     .nav-item {
-        @apply cursor-pointer
+        @apply cursor-pointer;
+    }
+    .custom-h1 {
+        @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
     }
 }
