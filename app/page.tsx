@@ -8,7 +8,7 @@ export default function Home() {
     <main className="">
       <Navbar />
 
-      <section className="h-auto w-auto">
+      <section className="h-auto w-auto mt-20  ">
         <div className="relative flex p-20 pt-5 ">
           <div className="p-6 h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
             <Image
