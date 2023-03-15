@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import React from "react";
 import test from "../public/imgs/profile-pic.webp";
 import propic from "../public/imgs/profile-pic3.png";
 
 export default function Home() {
+
   return (
     <main className="">
       <Navbar />

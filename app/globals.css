@@ -4,15 +4,21 @@
 
 @layer base {
     body{
-        @apply bg-slate-100 scroll-smooth;
+        @apply bg-slate-100 dark:bg-slate-800 scroll-smooth;
     }
 }
 
-@layer components {
+@layer utilities {
     .nav-item {
         @apply cursor-pointer;
     }
     .custom-h1 {
         @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
     }
+    .theme-but {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
 }

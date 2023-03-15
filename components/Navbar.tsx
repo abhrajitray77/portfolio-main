@@ -1,16 +1,24 @@
-import React from 'react'
+
+import React, { useState } from "react";
+import { motion, spring } from "framer-motion";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
-  return (
-    <div className="w-auto hidden md:flex justify-end mr-3 md:mr-10 z-50">
-        <ul className="flex space-x-4 md:space-x-10 py-8 font-bold">
-          <li className='nav-item'>About Me</li>
-          <li className='nav-item'>Skills</li>
-          <li className='nav-item'>Projects</li>
-          <li className='nav-item'>Contact</li>
-        </ul>
-    </div>
-  )
-}
 
-export default Navbar
+  return (
+    <nav className="w-auto hidden md:flex justify-end mr-3 md:mr-10 z-50">
+      <ul className="flex space-x-4 md:space-x-10 py-8 font-bold">
+        <li className="nav-item">About Me</li>
+        <li className="nav-item">Skills</li>
+        <li className="nav-item">Projects</li>
+        <li className="nav-item">Contact</li>
+        <div className=""><ThemeButton /></div>
+      </ul>
+
+      
+    </nav>
+  );
+};
+
+export default Navbar;
