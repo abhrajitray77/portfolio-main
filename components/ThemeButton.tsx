@@ -7,6 +7,15 @@ import { useTheme } from "next-themes";
 const ThemeButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const spring = {
     type: "spring",
@@ -22,7 +31,6 @@ const ThemeButton = () => {
     >
       <motion.div
         className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-black/90"
-        layout
         transition={spring}
       >
         <motion.div whileTap={{ rotate: 360 }}>
