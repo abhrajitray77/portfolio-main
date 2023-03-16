@@ -4,7 +4,7 @@
 
 @layer base {
     body{
-        @apply bg-slate-100 dark:bg-slate-800 scroll-smooth;
+        @apply bg-slate-100 dark:bg-slate-900 scroll-smooth dark:text-gray-200 text-gray-900;
     }
 }
 
@@ -13,7 +13,7 @@
         @apply cursor-pointer;
     }
     .custom-h1 {
-        @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+        @apply text-2xl md:text-3xl lg:text-4xl font-semibold dark:text-gray-200;
     }
     .theme-but {
         user-select: none;

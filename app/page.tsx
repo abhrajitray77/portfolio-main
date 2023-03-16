@@ -3,6 +3,8 @@ import Image from "next/image";
 import React from "react";
 import test from "../public/imgs/profile-pic.webp";
 import propic from "../public/imgs/profile-pic3.png";
+import altpic from "../public/imgs/finalBg.webp";
+import ProjCard from "@/components/ProjCard";
 
 export default function Home() {
   return (
@@ -127,10 +129,9 @@ export default function Home() {
               <Image
                 className="w-40 my-auto"
                 alt=""
-                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" 
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
                 width={300}
                 height={100}
-              
               />
               <Image
                 className="w-40 my-auto"
@@ -170,6 +171,13 @@ export default function Home() {
               <Image
                 className="w-40 my-auto"
                 alt=""
+                src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
                 src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
                 width={300}
                 height={100}
@@ -201,7 +209,12 @@ export default function Home() {
 
         {/* Projects */}
 
-        <section className="h-auto w-auto mt-20"></section>
+        <section className="flex flex-col h-auto w-auto mt-20">
+          <h1 className="custom-h1 mx-auto mt-10">
+            Projects that I&apos;ve worked on 
+          </h1>
+          <ProjCard />
+        </section>
 
         {/* Contact */}
 
