@@ -3,9 +3,10 @@ import Image from "next/image";
 import React from "react";
 import test from "../public/imgs/profile-pic.webp";
 import propic from "../public/imgs/profile-pic3.png";
+import altpic from "../public/imgs/finalBg.webp";
+import ProjCard from "@/components/ProjCard";
 
 export default function Home() {
-
   return (
     <main className="">
       <Navbar />
@@ -64,8 +65,10 @@ export default function Home() {
             <h1 className="custom-h1">
               Technologies that I love working with --&gt;
             </h1>
-            <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
-            place-items-start ">
+            <div
+              className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
+            place-items-start "
+            >
               <Image
                 className="w-40 my-auto"
                 alt=""
@@ -115,18 +118,105 @@ export default function Home() {
                 width={300}
                 height={100}
               />
-
             </div>
           </div>
           <div className="mt-12">
             <h1 className="custom-h1">Skills that come in handy --&gt;</h1>
-            <div></div>
+            <div
+              className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
+            place-items-start"
+            >
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=EEF37B"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white"
+                width={300}
+                height={100}
+              />
+              <Image
+                className="w-40 my-auto"
+                alt=""
+                src="https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine"
+                width={300}
+                height={100}
+              />
+            </div>
           </div>
         </section>
 
         {/* Projects */}
 
-        <section className="h-auto w-auto mt-20"></section>
+        <section className="flex flex-col h-auto w-auto mt-20">
+          <h1 className="custom-h1 mx-auto mt-10">
+            Projects that I&apos;ve worked on 
+          </h1>
+          <div className="flex-cols md:flex w-full mt-20 px-6 md:px-10 space-y-20">
+            <ProjCard />
+          </div>
+        </section>
 
         {/* Contact */}
 
