@@ -213,7 +213,9 @@ export default function Home() {
           <h1 className="custom-h1 mx-auto mt-10">
             Projects that I&apos;ve worked on 
           </h1>
-          <ProjCard />
+          <div className="flex-cols md:flex w-full mt-20 px-6 md:px-10 space-y-20">
+            <ProjCard />
+          </div>
         </section>
 
         {/* Contact */}
