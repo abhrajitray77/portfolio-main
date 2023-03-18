@@ -211,10 +211,40 @@ export default function Home() {
 
         <section className="flex flex-col h-auto w-auto mt-20">
           <h1 className="custom-h1 mx-auto mt-10">
-            Projects that I&apos;ve worked on 
+            Projects that I&apos;ve worked on
           </h1>
-          <div className="flex-cols md:flex w-full mt-20 px-6 md:px-10 space-y-20">
-            <ProjCard />
+          <div className="flex-cols w-full mt-20 px-6 md:px-10 space-y-20">
+            <ProjCard
+              name="Enactus SMIT"
+              desc="The offcial website of Enactus SMIT desc"
+              vidSrc="../public/vids/enactrec.mp4"
+              altText="Enactus SMIT"
+              projLink="https://enactus-smit-final.vercel.app/"
+              tech={[
+                "React.js",
+                "Tailwindcss",
+                "Framer-Motion",
+                "React-Router",
+                "EmailJs",
+                "Supabase",
+              ]}
+            />
+            <ProjCard
+              name="Enactus SMIT"
+              desc="The offcial website of Enactus SMIT desc"
+           /*    imgSrc={altpic} */
+              vidSrc="../public/vids/netrec.mp4"
+              altText="Enactus SMIT"
+              projLink="https://enactus-smit-final.vercel.app/"
+              tech={[
+                "React.js",
+                "Tailwindcss",
+                "Framer-Motion",
+                "React-Router",
+                "EmailJs",
+                "Supabase",
+              ]}
+            />
           </div>
         </section>
 

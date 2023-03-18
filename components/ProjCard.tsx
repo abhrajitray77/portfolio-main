@@ -1,17 +1,55 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
-import altpic from "../public/imgs/finalBg.webp";
+import { Url } from "url";
 
-const ProjCard = () => {
+type ProjCardProps = {
+  name: string;
+  desc: string;
+  tech: string[];
+  vidSrc: string;
+  altText: string;
+  projLink: string;
+};
+
+const ProjCard = ({
+  name,
+  desc,
+  tech,
+  vidSrc,
+  altText,
+  projLink,
+}: ProjCardProps) => {
   return (
     <div className="flex-cols md:flex">
-      <div className="w-[400px] mx-auto">
-        <Image className="rounded-lg" src={altpic} alt="" />
+      <div className="w-[400px] mx-auto flex items-center">
+        <video className="rounded-lg" autoPlay height={300} width={400}>
+          <source src={vidSrc} type="video/webm" />
+          {altText}
+        </video>
       </div>
       <div className="flex-col space-y-2 mt-4 px-0 md:px-20  ">
-        <h2>Project Name</h2>
-        <p>Description</p>
-        <ul></ul>
+        <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
+        <p>{desc}</p>
+        <div>
+          <h3>Tech Stack:</h3>
+          <ul className="flex flex-wrap">
+            {tech.map((techItem, index) => (
+              <li
+                className=" bg-blue-200 rounded-full mt-2 mr-2 px-2 whitespace-nowrap"
+                key={index}
+              >
+                {techItem}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="">
+          <h3 className="pt-4">Deployment:</h3>
+          <Link className="text-blue-500" href={projLink}>
+            {projLink}
+          </Link>
+        </div>
       </div>
     </div>
   );
