@@ -218,32 +218,26 @@ export default function Home() {
           <div className="flex-cols w-full mt-20 px-6 md:px-10 space-y-20">
             <ProjCard
               name="Enactus SMIT"
-              desc="The offcial website of Enactus SMIT desc"
+              desc="The offcial website of Enactus SMIT built uing React.js, TailwindCSS and Framer Motion."
               imgSrc={encpic}
               altText="Enactus SMIT"
               projLink="https://enactus-smit-final.vercel.app/"
               tech={[
                 "React.js",
-                "Tailwindcss",
+                "TailwindCSS",
                 "Framer-Motion",
-                "React-Router",
-                "EmailJs",
-                "Supabase",
+                "React-Router"
               ]}
             />
             <ProjCard
-              name="Enactus SMIT"
-              desc="The offcial website of Enactus SMIT desc"
+              name="Netflix Landing Page Clone"
+              desc="A Netflix landing page Clone build with Typescript, Next.js and TailwindCSS "
               imgSrc={netpic}
-              altText="Enactus SMIT"
-              projLink="https://enactus-smit-final.vercel.app/"
+              altText="Netflix Clone"
+              projLink="https://netflix-learn.vercel.app/"
               tech={[
-                "React.js",
-                "Tailwindcss",
-                "Framer-Motion",
-                "React-Router",
-                "EmailJs",
-                "Supabase",
+                "Next.js",
+                "TailwindCSS"
               ]}
             />
           </div>
@@ -251,7 +245,9 @@ export default function Home() {
 
         {/* Contact */}
 
-        <section></section>
+        <section>
+          <h1 className="custom-h1 mt-28 flex justify-start">Contact</h1>
+        </section>
       </article>
     </main>
   );
