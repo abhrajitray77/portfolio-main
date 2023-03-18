@@ -5,6 +5,8 @@ import test from "../public/imgs/profile-pic.webp";
 import propic from "../public/imgs/profile-pic3.png";
 import altpic from "../public/imgs/finalBg.webp";
 import ProjCard from "@/components/ProjCard";
+import encpic from "../public/imgs/enc.gif";
+import netpic from "../public/imgs/net.gif";
 
 export default function Home() {
   return (
@@ -217,7 +219,7 @@ export default function Home() {
             <ProjCard
               name="Enactus SMIT"
               desc="The offcial website of Enactus SMIT desc"
-              vidSrc="../public/vids/enactrec.mp4"
+              imgSrc={encpic}
               altText="Enactus SMIT"
               projLink="https://enactus-smit-final.vercel.app/"
               tech={[
@@ -232,8 +234,7 @@ export default function Home() {
             <ProjCard
               name="Enactus SMIT"
               desc="The offcial website of Enactus SMIT desc"
-           /*    imgSrc={altpic} */
-              vidSrc="../public/vids/netrec.mp4"
+              imgSrc={netpic}
               altText="Enactus SMIT"
               projLink="https://enactus-smit-final.vercel.app/"
               tech={[

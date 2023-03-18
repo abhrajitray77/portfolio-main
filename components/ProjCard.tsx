@@ -7,7 +7,7 @@ type ProjCardProps = {
   name: string;
   desc: string;
   tech: string[];
-  vidSrc: string;
+  imgSrc: StaticImageData;
   altText: string;
   projLink: string;
 };
@@ -16,17 +16,14 @@ const ProjCard = ({
   name,
   desc,
   tech,
-  vidSrc,
+  imgSrc,
   altText,
   projLink,
 }: ProjCardProps) => {
   return (
     <div className="flex-cols md:flex">
       <div className="w-[400px] mx-auto flex items-center">
-        <video className="rounded-lg" autoPlay height={300} width={400}>
-          <source src={vidSrc} type="video/webm" />
-          {altText}
-        </video>
+        <Image src={imgSrc} alt={altText} />
       </div>
       <div className="flex-col space-y-2 mt-4 px-0 md:px-20  ">
         <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
