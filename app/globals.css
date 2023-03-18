@@ -4,7 +4,7 @@
 
 @layer base {
     body{
-        @apply bg-slate-100 dark:bg-slate-900 scroll-smooth dark:text-gray-200 text-gray-900;
+        @apply bg-slate-100 dark:bg-[#1d1f31] scroll-smooth dark:text-gray-200 text-gray-900;
     }
 }
 
@@ -21,4 +21,8 @@
         -webkit-user-select: none;
         -ms-user-select: none;
       }
+    .contact-item {
+        @apply text-gray-600 hover:text-gray-900 flex items-center space-x-3
+        dark:text-gray-300 dark:hover:text-white;
+    }
 }
