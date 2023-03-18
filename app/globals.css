@@ -21,4 +21,8 @@
         -webkit-user-select: none;
         -ms-user-select: none;
       }
+    .contact-item {
+        @apply text-gray-600 hover:text-gray-900 flex items-center space-x-3
+        dark:text-gray-300 dark:hover:text-white;
+    }
 }
