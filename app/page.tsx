@@ -7,6 +7,7 @@ import altpic from "../public/imgs/finalBg.webp";
 import ProjCard from "@/components/ProjCard";
 import encpic from "../public/imgs/enc.gif";
 import netpic from "../public/imgs/net.gif";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -246,7 +247,7 @@ export default function Home() {
           <h1 className="custom-h1 mt-20 lg:mt-28 flex justify-start mb-8">
             Reach Out To Me
           </h1>
-           {/*    email */}
+          {/*    email */}
           <div className="space-y-2">
             <h3 className="text-xl font-medium">Send an E-Mail</h3>
             <div className="contact-item">
@@ -262,7 +263,7 @@ export default function Home() {
               <span className="">abhrajitray77@gmail.com</span>
             </div>
           </div>
-         {/*  Socials  */}
+          {/*  Socials  */}
           <div className="space-y-2">
             <h3 className="text-xl font-medium">Socials</h3>
             <a
@@ -299,6 +300,9 @@ export default function Home() {
           </div>
         </section>
       </article>
+      <div className="pb-5 mx-10 md:mx-20 lg:mx-32">
+        <Footer />
+      </div>
     </main>
   );
 }
