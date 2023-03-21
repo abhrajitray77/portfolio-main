@@ -1,37 +1,36 @@
-"use client";
 import Image from "next/image";
 import React from "react";
-import back from "../public/imgs/finalBg.webp";
-import front from "../public/imgs/final1lowcut.webp";
 import propic from "../public/imgs/profile-pic3.png";
+import propicD from "../public/imgs/profile-pic3-dark.png"
 
 const Banner = () => {
   return (
-    <div className="relative h-screen w-auto">
-      <div className="flex top-40 left-32 z-10">
-        <div className="md:h-[300px] md:w-[300px] lg:h-[500px] lg:w-[500px] ">
-          <Image
-            className="drop-shadow-2xl"
-            src={propic}
-            height={1000}
-            width={1000}
-            alt="propic"
-          />
+    <div className="relative h-screen w-auto ">
+        <div className="relative flex p-20 pt-5 ">
+          <div className="p-6 h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
+            <Image 
+              className="drop-shadow-2xl dark:hidden"
+              src={propic}
+              height={1000}
+              width={1000}
+              alt="propic"
+            />
+            <Image 
+              className="drop-shadow-2xl dark:visible invisible"
+              src={propicD}
+              height={1000}
+              width={1000}
+              alt="propic"
+            />
+          </div>
+          <div
+            className="absolute bottom-0 md:left-[400px] md:top-20 lg:left-[500px] lg:top-20 flex-col 
+          font-mono leading-none font-extrabold dark:text-white"
+          >
+            <h1 className="text-[4rem] md:text-[6rem] lg:text-[9rem]">ABHRAJIT</h1>
+            <h1 className="text-[3.8rem] md:text-[5.8rem] lg:text-[8rem]">RAY</h1>
+          </div>
         </div>
-        <div className="absolute flex-col left-[450px] top-20 font-mono leading-none font-extrabold
-         ">
-          <h1 className="">ABHRAJIT</h1>
-          <h1 className="">RAY</h1>
-        </div>
-      </div>
-{/*       <div className="-z-50  ">
-        <div className="absolute">
-          <Image src={back} alt="" />
-        </div>
-        <div className="absolute ">
-          <Image src={front} alt="" />
-        </div>
-      </div> */}
     </div>
   );
 };
