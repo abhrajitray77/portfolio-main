@@ -8,18 +8,45 @@ import ProjCard from "@/components/ProjCard";
 import encpic from "../public/imgs/enc.gif";
 import netpic from "../public/imgs/net.gif";
 import Footer from "@/components/Footer";
+import propicD from "../public/imgs/profile-pic3-dark.png"
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="relative">
       <Navbar />
+      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute grid grid-cols-2 place-items-center w-full -z-50 overflow-hidden ">
+        <div className="w-72 h-72 bg-purple-300 
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob">
+         </div>
+         <div className=" w-80 h-80 bg-yellow-300
+          rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000">
+
+          </div>
+        <div className="w-[500px] h-[500px] bg-pink-300 
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000">
+
+        </div>
+        <div className="absolute -inset-y-0.3 w-[500px] h-[500px] md:w-[700px] md:h-[700px] bg-[#11A37F]
+        rounded-full mix-blend-normal filter blur-2xl opacity-70 animate-blob animation-delay-7000">
+
+        </div>
+      </div>
+      </div>
 
       <section className="h-auto w-auto mt-20  ">
         <div className="relative flex p-20 pt-5 ">
           <div className="p-6 h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
-            <Image
-              className="drop-shadow-2xl"
+            <Image 
+              className="drop-shadow-2xl dark:hidden"
               src={propic}
+              height={1000}
+              width={1000}
+              alt="propic"
+            />
+            <Image 
+              className="drop-shadow-2xl dark:visible invisible"
+              src={propicD}
               height={1000}
               width={1000}
               alt="propic"
@@ -27,10 +54,10 @@ export default function Home() {
           </div>
           <div
             className="absolute bottom-0 md:left-[400px] md:top-20 lg:left-[450px] lg:top-20 flex-col 
-          font-mono leading-none font-extrabold"
+          font-mono leading-none font-extrabold dark:text-white"
           >
-            <h1 className="text-[4rem] md:text-[6rem]">ABHRAJIT</h1>
-            <h1 className="text-[3.8rem] md:text-[5.8rem]">RAY</h1>
+            <h1 className="text-[4rem] md:text-[6rem] lg:text-[9rem]">ABHRAJIT</h1>
+            <h1 className="text-[3.8rem] md:text-[5.8rem] lg:text-[8rem]">RAY</h1>
           </div>
         </div>
       </section>
@@ -232,11 +259,12 @@ export default function Home() {
             />
             <ProjCard
               name="Netflix Landing Page Clone"
-              desc="A Netflix landing page Clone build with Typescript, Next.js and TailwindCSS "
+              desc="A Netflix landing page Clone build with Typescript, Next.js and TailwindCSS that uses the TMDB API
+              to fetch the movie details and posters. "
               imgSrc={netpic}
               altText="Netflix Clone"
               projLink="https://netflix-learn.vercel.app/"
-              tech={["Next.js", "TailwindCSS"]}
+              tech={["Next.js", "TailwindCSS", "REST API"]}
             />
           </div>
         </section>

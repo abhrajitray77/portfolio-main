@@ -20,8 +20,8 @@ const Banner = () => {
         </div>
         <div className="absolute flex-col left-[450px] top-20 font-mono leading-none font-extrabold
          ">
-          <h1 className="text-[10rem]">ABHRAJIT</h1>
-          <h1 className="text-[9rem]">RAY</h1>
+          <h1 className="">ABHRAJIT</h1>
+          <h1 className="">RAY</h1>
         </div>
       </div>
 {/*       <div className="-z-50  ">

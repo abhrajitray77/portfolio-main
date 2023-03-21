@@ -21,7 +21,7 @@ const ProjCard = ({
   projLink,
 }: ProjCardProps) => {
   return (
-    <div className="flex-cols lg:flex ">
+    <div className="grid lg:grid-cols-2 place-items-center ">
       <div className="w-auto">
         <Image src={imgSrc} alt={altText} width={400} />
       </div>
