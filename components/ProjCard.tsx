@@ -21,11 +21,11 @@ const ProjCard = ({
   projLink,
 }: ProjCardProps) => {
   return (
-    <div className="flex-cols lg:flex ">
+    <div className="grid lg:grid-cols-2 place-items-start ">
       <div className="w-auto">
         <Image src={imgSrc} alt={altText} width={400} />
       </div>
-      <div className="flex-col space-y-2 mt-4 lg:ml-10  ">
+      <div className="flex-col space-y-2 mt-4  ">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">{name}</h2>
         <p>{desc}</p>
         <div>
