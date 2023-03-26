@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
@@ -13,26 +14,26 @@ export default function Home() {
 
       {/* Background */}
       
-      <div className="fixed inset-0 overflow-hidden -z-50">
+      <div className={`fixed inset-0 overflow-hidden -z-50 h-[100vh]`}>
       <div className="absolute grid grid-cols-2 place-items-center w-full  overflow-hidden ">
         <div className="w-72 h-72 bg-purple-300 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob">
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob">
          </div>
          <div className=" w-80 h-80 bg-yellow-300
-          rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000">
+          rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-2000">
 
           </div>
         <div className="w-[500px] h-[500px] bg-[#ff00b391]
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000">
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-4000">
 
         </div>
         <div className="absolute -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
         bg-[#29d1e7f1] dark:bg-[#7300d1a8] 
-        rounded-full mix-blend-normal filter blur-2xl opacity-70 special-blob animation-delay-7000">
+        rounded-full mix-blend-normal filter blur-2xl opacity-70 md:special-blob animation-delay-7000">
 
         </div>
         <div className="absolute right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
-          rounded-full mix-blend-multiply filter blur-3xl opacity-80 color-blob animation-delay-1000">
+          rounded-full mix-blend-multiply filter blur-3xl opacity-80 md:color-blob animation-delay-1000">
 
           </div>
       </div>
