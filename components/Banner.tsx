@@ -5,8 +5,8 @@ import propicD from "../public/imgs/profile-pic3-dark.png"
 
 const Banner = () => {
   return (
-    <div className="relative h-screen w-auto ">
-        <div className="relative flex p-20 pt-5 ">
+    <div className="relative w-auto ">
+        <div className="relative flex p-10 md:p-20 pt-5 ">
           <div className="p-6 h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
             <Image 
               className="drop-shadow-2xl dark:hidden"
@@ -16,7 +16,7 @@ const Banner = () => {
               alt="propic"
             />
             <Image 
-              className="drop-shadow-2xl dark:visible invisible"
+              className="drop-shadow-2xl hidden dark:block"
               src={propicD}
               height={1000}
               width={1000}
