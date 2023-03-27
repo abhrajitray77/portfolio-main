@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Background */}
       
-      <div className={`fixed inset-0 overflow-hidden -z-50 h-[100vh]`}>
+      <div className={`fixed inset-0 overflow-hidden -z-50 `}>
       <div className="absolute grid grid-cols-2 place-items-center w-full  overflow-hidden ">
         <div className="w-72 h-72 bg-purple-300 
         rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob">
