@@ -1,3 +1,4 @@
+"use client";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import React from "react";
@@ -16,20 +17,38 @@ const skillHeader: Variants = {
     },
   },
 };
-
+const skills: Variants = {
+  offscreen: {
+    scale: 0.9,
+    opacity: 0,
+  },
+  onscreen: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+    },
+  },
+};
 
 const Skills = () => {
   return (
     <div>
-      <motion.h1 
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{once: true}}
-      variants={skillHeader}
-      className="custom-h1">
+      <motion.h1
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={skillHeader}
+        className="custom-h1"
+      >
         Technologies that I love working with --&gt;
       </motion.h1>
-      <div
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={skills}
         className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
             place-items-start "
       >
@@ -82,15 +101,22 @@ const Skills = () => {
           width={300}
           height={100}
         />
-      </div>
+      </motion.div>
       <div className="mt-12">
-      <motion.h1 
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{once: true}}
-      variants={skillHeader}
-           className="custom-h1">Skills that come in handy --&gt;</motion.h1>
-        <div
+        <motion.h1
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true }}
+          variants={skillHeader}
+          className="custom-h1"
+        >
+          Skills that come in handy --&gt;
+        </motion.h1>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true }}
+          variants={skills}
           className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
             place-items-start"
         >
@@ -171,7 +197,7 @@ const Skills = () => {
             width={300}
             height={100}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
