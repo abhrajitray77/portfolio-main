@@ -24,9 +24,6 @@ const skills: Variants = {
   onscreen: {
     scale: 1,
     opacity: 1,
-    transition: {
-      type: "spring",
-    },
   },
 };
 

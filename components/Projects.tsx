@@ -6,7 +6,7 @@ import { motion, Variants } from "framer-motion";
 
 const card: Variants = {
   offscreen: {
-    scale: 0.8,
+    scale: 0.9,
     opacity: 0,
   },
   onscreen: {
