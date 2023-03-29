@@ -1,4 +1,4 @@
-
+"use client";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
@@ -6,6 +6,21 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
+import { motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -13,39 +28,47 @@ export default function Home() {
       <Navbar />
 
       {/* Background */}
-      
+
       <div className={`fixed inset-0 overflow-hidden -z-50 `}>
-      <div className="absolute grid grid-cols-2 place-items-center w-full  overflow-hidden ">
-        <div className="w-72 h-72 bg-purple-300 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob">
-         </div>
-         <div className=" w-80 h-80 bg-yellow-300
-          rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-2000">
-
-          </div>
-        <div className="w-[500px] h-[500px] bg-[#ff00b391]
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-4000">
-
-        </div>
-        <div className="absolute -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
+        <div className="absolute grid grid-cols-2 place-items-center w-full  overflow-hidden ">
+          <div
+            className="w-72 h-72 bg-purple-300 
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob"
+          ></div>
+          <div
+            className=" w-80 h-80 bg-yellow-300
+          rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-2000"
+          ></div>
+          <div
+            className="w-[500px] h-[500px] bg-[#ff00b391]
+        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-4000"
+          ></div>
+          <div
+            className="absolute -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
         bg-[#29d1e7f1] dark:bg-[#7300d1a8] 
-        rounded-full mix-blend-normal filter blur-2xl opacity-70 md:special-blob animation-delay-7000">
-
+        rounded-full mix-blend-normal filter blur-2xl opacity-70 md:special-blob animation-delay-7000"
+          ></div>
+          <div
+            className="absolute right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
+          rounded-full mix-blend-multiply filter blur-3xl opacity-80 md:color-blob animation-delay-1000"
+          ></div>
         </div>
-        <div className="absolute right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
-          rounded-full mix-blend-multiply filter blur-3xl opacity-80 md:color-blob animation-delay-1000">
-
-          </div>
-      </div>
       </div>
 
       <section className="h-auto w-auto mt-20  ">
-      <Banner />
+        <Banner />
       </section>
 
       {/* About me */}
       <article className="mx-10 my-28 md:mx-20 lg:mx-32">
-        <section className="h-auto w-auto ">
+        <motion.section
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={cardVariants}
+          viewport={{ once: true }}
+          className="h-auto w-auto "
+          id="about"
+        >
           <div className="relative flex flex-col">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Welcome to my little corner of the web{" "}
@@ -67,23 +90,33 @@ export default function Home() {
           <button className="bg-cyan-800 p-3 rounded-lg text-white mt-6">
             Connect!
           </button>
-        </section>
+        </motion.section>
 
         {/* Skills */}
 
-        <section className="h-auto w-auto mt-20">
+        <section className="h-auto w-auto mt-20" id="skills">
           <Skills />
         </section>
 
         {/* Projects */}
 
-        <section className="flex flex-col h-auto w-auto mt-20">
+        <section className="flex flex-col h-auto w-auto mt-20" id="proj">
           <Projects />
         </section>
 
         {/* Contact */}
 
-        <section className="flex-col space-y-3">
+        <motion.section
+          initial={{ opacity: 0, translateX: -200 }}
+          whileInView={{
+            opacity: 1,
+            translateX: 0,
+            transition: { type: "spring", stiffness: 50 },
+          }}
+          viewport={{ once: true }}
+          className="flex-col space-y-3"
+          id="cont"
+        >
           <h1 className="custom-h1 mt-20 lg:mt-28 flex justify-start mb-8">
             Reach Out To Me
           </h1>
@@ -104,10 +137,10 @@ export default function Home() {
             </div>
           </div>
           {/*  Socials  */}
-          <div className="space-y-2">
+          <div className=" space-y-2">
             <h3 className="text-xl font-medium">Socials</h3>
             <a
-              href="https://www.linkedin.com/company/enactus-smit/"
+              href="https://www.linkedin.com/in/abhrajit-ray-b6a97721a/"
               className="contact-item"
               target="_blank"
               rel="noopener noreferrer"
@@ -137,12 +170,27 @@ export default function Home() {
               </svg>
               <span className="">GitHub</span>
             </a>
+            <a
+              href="https://twitter.com/ray_abhrajit"
+              target="_blank"
+              className="contact-item"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-8 h-10 ml-1 mt-1"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg>
+              <span className="">Twitter</span>
+            </a>
           </div>
-        </section>
+        </motion.section>
       </article>
-      <div className="pb-5 mx-10 md:mx-20 lg:mx-32">
+      <footer className="pb-5 mx-10 md:mx-20 lg:mx-32">
         <Footer />
-      </div>
+      </footer>
     </main>
   );
 }

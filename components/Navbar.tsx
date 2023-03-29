@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, spring } from "framer-motion";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+
+
   return (
     <nav className="w-auto flex justify-end mr-3 md:mr-10 z-50">
       <ul className="hidden md:flex items-center space-x-4 md:space-x-10 py-8 font-bold">
