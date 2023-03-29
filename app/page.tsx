@@ -1,4 +1,4 @@
-
+"use client"
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
@@ -6,6 +6,23 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
+import { motion, Variants} from "framer-motion";
+
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -45,7 +62,13 @@ export default function Home() {
 
       {/* About me */}
       <article className="mx-10 my-28 md:mx-20 lg:mx-32">
-        <section className="h-auto w-auto ">
+      <motion.section
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={cardVariants}
+          viewport={{once:true}}
+        
+         className="h-auto w-auto " id="about">
           <div className="relative flex flex-col">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Welcome to my little corner of the web{" "}
@@ -67,23 +90,23 @@ export default function Home() {
           <button className="bg-cyan-800 p-3 rounded-lg text-white mt-6">
             Connect!
           </button>
-        </section>
+        </motion.section>
 
         {/* Skills */}
 
-        <section className="h-auto w-auto mt-20">
+        <section className="h-auto w-auto mt-20" id="skills">
           <Skills />
         </section>
 
         {/* Projects */}
 
-        <section className="flex flex-col h-auto w-auto mt-20">
+        <section className="flex flex-col h-auto w-auto mt-20" id="proj">
           <Projects />
         </section>
 
         {/* Contact */}
 
-        <section className="flex-col space-y-3">
+        <section className="flex-col space-y-3" id="cont">
           <h1 className="custom-h1 mt-20 lg:mt-28 flex justify-start mb-8">
             Reach Out To Me
           </h1>

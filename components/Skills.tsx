@@ -1,12 +1,34 @@
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+
+const skillHeader: Variants = {
+  offscreen: {
+    translateX: -200,
+    opacity: 0,
+  },
+  onscreen: {
+    translateX: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 1.5,
+    },
+  },
+};
+
 
 const Skills = () => {
   return (
     <div>
-      <h1 className="custom-h1">
+      <motion.h1 
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{once: true}}
+      variants={skillHeader}
+      className="custom-h1">
         Technologies that I love working with --&gt;
-      </h1>
+      </motion.h1>
       <div
         className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
             place-items-start "
@@ -62,7 +84,12 @@ const Skills = () => {
         />
       </div>
       <div className="mt-12">
-        <h1 className="custom-h1">Skills that come in handy --&gt;</h1>
+      <motion.h1 
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{once: true}}
+      variants={skillHeader}
+           className="custom-h1">Skills that come in handy --&gt;</motion.h1>
         <div
           className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
             place-items-start"
