@@ -13,7 +13,6 @@ const skillHeader: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1.5,
     },
   },
 };
@@ -27,7 +26,6 @@ const skills: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1.5,
     },
   },
 };
