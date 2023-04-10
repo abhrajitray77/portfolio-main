@@ -1,12 +1,13 @@
 "use client";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
 import { motion, Variants } from "framer-motion";
+
 
 const cardVariants: Variants = {
   offscreen: {
@@ -23,6 +24,10 @@ const cardVariants: Variants = {
 };
 
 export default function Home() {
+  const contRef = useRef(null as any)
+
+   const executeScroll = () => contRef.current.scrollIntoView( {behavior: "smooth"})    
+   // run this function from an event handler or an effect to execute scroll 
   return (
     <main className="relative">
       <Navbar />
@@ -87,8 +92,15 @@ export default function Home() {
               Let&apos;s connect and work on something cool together!
             </p>
           </div>
-          <button className="bg-cyan-800 p-3 rounded-lg text-white mt-6">
-            Connect!
+          <button
+            className="mt-10 bg-cyan-600 relative inline-flex items-center justify-center overflow-hidden rounded-md px-12 py-3 
+          font-medium tracking-wide text-white text-xl shadow-2xl hover:scale-110 
+          transition-all duration-300 ease-in-out  hover:shadow-blue-600 active:translate-y-
+          hover:bg-gradient-to-r from-blue-500 to-purple-500"
+          onClick={()=>{
+            executeScroll()
+          }}>
+            <span className="relative">Connect</span>
           </button>
         </motion.section>
 
@@ -116,6 +128,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="flex-col space-y-3"
           id="cont"
+          ref={contRef}
         >
           <h1 className="custom-h1 mt-20 lg:mt-28 flex justify-start mb-8">
             Reach Out To Me
