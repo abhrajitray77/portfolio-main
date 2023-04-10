@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="h-auto w-auto mt-20  ">
+      <section className="h-auto w-auto  ">
         <Banner />
       </section>
 
