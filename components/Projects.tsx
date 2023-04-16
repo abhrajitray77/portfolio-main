@@ -57,11 +57,11 @@ const Projects = () => {
       >
         <ProjCard
           name="Enactus SMIT"
-          desc="The offcial website of Enactus SMIT built uing React.js, TailwindCSS and Framer Motion."
+          desc="The offcial website of Enactus SMIT built uing React.js, TailwindCSS, Framer Motion and Firebase."
           imgSrc={encpic}
           altText="Enactus SMIT"
           projLink="https://enactus-smit-final.vercel.app/"
-          tech={["React.js", "TailwindCSS", "Framer-Motion", "React-Router"]}
+          tech={["React.js", "TailwindCSS", "Framer-Motion", "React-Router", "Firebase", "EmailJS"]}
         />
         <ProjCard
           name="GPT-3 Chatbot using OpenAI API"
