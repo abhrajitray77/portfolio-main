@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+
+    html {
+        @apply scroll-smooth;
+    }
+
     body{
         @apply bg-slate-100 dark:bg-[#1d1f31] scroll-smooth dark:text-gray-200 text-gray-900;
     }

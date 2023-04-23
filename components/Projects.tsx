@@ -74,7 +74,7 @@ const Projects = () => {
           tech={["Next.js", "TailwindCSS", "OpenAI API", "Firebase"]}
         />
         <ProjCard
-          name="Netflix Landing Page Clon"
+          name="Netflix Landing Page Clone"
           desc="A Netflix landing page Clone build with Typescript, Next.js and TailwindCSS that uses the TMDB API
       to fetch the movie details and posters. "
           imgSrc={netpic}

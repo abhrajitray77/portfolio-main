@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import propic from "../public/imgs/profile-pic3.png";
-import propicD from "../public/imgs/profile-pic3-dark.png";
+import propic from "../public/imgs/profile-pic3.webp";
+import propicD from "../public/imgs/profile-pic3-dark.webp";
 
 const Banner = () => {
   return (
