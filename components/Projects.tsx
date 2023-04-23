@@ -3,6 +3,7 @@ import ProjCard from "./ProjCard";
 import encpic from "../public/imgs/enc.gif";
 import netpic from "../public/imgs/net.gif";
 import pepepic from "../public/imgs/pepegpt.gif";
+import docpic from "../public/imgs/doc.gif";
 
 import { motion, Variants } from "framer-motion";
 
@@ -61,7 +62,14 @@ const Projects = () => {
           imgSrc={encpic}
           altText="Enactus SMIT"
           projLink="https://enactus-smit-final.vercel.app/"
-          tech={["React.js", "TailwindCSS", "Framer-Motion", "React-Router", "Firebase", "EmailJS"]}
+          tech={[
+            "React.js",
+            "TailwindCSS",
+            "Framer-Motion",
+            "React-Router",
+            "Firebase",
+            "EmailJS",
+          ]}
         />
         <ProjCard
           name="GPT-3 Chatbot using OpenAI API"
@@ -74,8 +82,16 @@ const Projects = () => {
           tech={["Next.js", "TailwindCSS", "OpenAI API", "Firebase"]}
         />
         <ProjCard
+          name="Doctor's Availability Checker"
+          desc="A site that fetches data from a MongoDB database to show the schedule of doctors from various departments. "
+          imgSrc={docpic}
+          altText="Docor's Availability Checker"
+          projLink="https://github.com/abhrajitray77/appointment_checker"
+          tech={["React.js", "TailwindCSS", "MongoDB", "Express.js", "Node.js"]}
+        />
+        <ProjCard
           name="Netflix Landing Page Clone"
-          desc="A Netflix landing page Clone build with Typescript, Next.js and TailwindCSS that uses the TMDB API
+          desc="A Netflix landing page Clone built with Typescript, Next.js and TailwindCSS that uses the TMDB API
       to fetch the movie details and posters. "
           imgSrc={netpic}
           altText="Netflix Clone"
