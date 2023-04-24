@@ -62,6 +62,7 @@ const Projects = () => {
           imgSrc={encpic}
           altText="Enactus SMIT"
           projLink="https://enactus-smit-final.vercel.app/"
+          gitLink="https://github.com/abhrajitray77/Enactus-smit-final"
           tech={[
             "React.js",
             "TailwindCSS",
@@ -79,6 +80,7 @@ const Projects = () => {
           imgSrc={pepepic}
           altText="ChatGPT Clone"
           projLink="https://custom-chat-gpt-alpha.vercel.app/"
+          gitLink="https://github.com/abhrajitray77/PepeGPT"
           tech={["Next.js", "TailwindCSS", "OpenAI API", "Firebase"]}
         />
         <ProjCard
@@ -86,7 +88,7 @@ const Projects = () => {
           desc="A site that fetches data from a MongoDB database to show the schedule of doctors from various departments. "
           imgSrc={docpic}
           altText="Docor's Availability Checker"
-          projLink="https://github.com/abhrajitray77/appointment_checker"
+          gitLink="https://github.com/abhrajitray77/appointment_checker"
           tech={["React.js", "TailwindCSS", "MongoDB", "Express.js", "Node.js"]}
         />
         <ProjCard
@@ -96,6 +98,7 @@ const Projects = () => {
           imgSrc={netpic}
           altText="Netflix Clone"
           projLink="https://netflix-learn.vercel.app/"
+          gitLink="https://github.com/abhrajitray77/netflix_clone"
           tech={["Next.js", "TailwindCSS", "REST API"]}
         />
       </motion.div>
