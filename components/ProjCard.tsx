@@ -9,7 +9,8 @@ type ProjCardProps = {
   tech: string[];
   imgSrc: StaticImageData;
   altText: string;
-  projLink: string;
+  projLink?: string;
+  gitLink?: string;
 };
 
 const ProjCard = ({
@@ -19,6 +20,7 @@ const ProjCard = ({
   imgSrc,
   altText,
   projLink,
+  gitLink,
 }: ProjCardProps) => {
   return (
     <div className="grid lg:grid-cols-2 place-items-start ">
@@ -26,7 +28,9 @@ const ProjCard = ({
         <Image src={imgSrc} alt={altText} width={400} />
       </div>
       <div className="flex-col space-y-2 mt-4  ">
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">{name}</h2>
+        <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+          {name}
+        </h2>
         <p>{desc}</p>
         <div>
           <h3>Tech Stack:</h3>
@@ -43,10 +47,24 @@ const ProjCard = ({
           </ul>
         </div>
         <div className="">
-          <h3 className="pt-4">Deployment:</h3>
-          <Link className="text-blue-500" href={projLink}>
-            {projLink}
-          </Link>
+          {projLink && (
+            <a
+              className="text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
+              href={projLink}
+              target="_blank"
+            >
+              <h3 className="pt-4 font-medium">Deployed Version</h3>
+            </a>
+          )}
+          {gitLink && (
+            <a
+              className="text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
+              href={gitLink}
+              target="_blank"
+            >
+              <h3 className="pt-4 font-medium">Github Link</h3>
+            </a>
+          )}
         </div>
       </div>
     </div>
