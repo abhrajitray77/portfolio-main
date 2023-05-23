@@ -49,7 +49,7 @@ const ProjCard = ({
         <div className="">
           {projLink && (
             <a
-              className="text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
+              className="text-indigo-500 dark:text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
               href={projLink}
               target="_blank"
             >
@@ -58,7 +58,7 @@ const ProjCard = ({
           )}
           {gitLink && (
             <a
-              className="text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
+              className="text-indigo-500 dark:text-blue-300 dark:hover:text-blue-200 hover:text-blue-800"
               href={gitLink}
               target="_blank"
             >

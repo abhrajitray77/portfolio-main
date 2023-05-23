@@ -56,7 +56,7 @@ export default function Home() {
           rounded-full blur-3xl opacity-80 md:color-blob animation-delay-1000"
           ></div>
 
-      <section className="h-auto w-auto  ">
+      <section className="h-auto w-auto">
         <Banner />
       </section>
 

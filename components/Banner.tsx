@@ -26,7 +26,7 @@ const Banner = () => {
           />
         </div>
         <div
-          className="absolute bottom-0 md:left-[400px] md:top-20 lg:left-[500px] lg:top-20 flex-col 
+          className="absolute bottom-0 md:top-[350px] lg:left-[500px] lg:top-20 flex-col 
           font-mono leading-none font-extrabold dark:text-white"
         >
           <h1 className="text-[4rem] md:text-[6rem] lg:text-[9rem]">
