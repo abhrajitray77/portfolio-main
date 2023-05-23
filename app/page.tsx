@@ -48,7 +48,7 @@ export default function Home() {
           ></div>
           <div
             className="fixed -z-50 -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
-        bg-[#29d1e7f1] dark:bg-[#7300d1a8] top-40 left-80 right-80 bottom-80
+        bg-[#29d1e7f1] dark:bg-[#7300d1a8] flex justify-center items-center
         rounded-full blur-2xl opacity-70 md:special-blob animation-delay-4000"
           ></div>
           <div
