@@ -39,7 +39,7 @@ export default function Home() {
         rounded-full blur-3xl opacity-70 md:animate-blob"
           ></div>
           <div
-            className="fixed -z-50 top-40 right-0 w-[400px] h-[400px] bg-yellow-300
+            className="fixed -z-50 top-0 right-0 w-[400px] h-[400px] bg-yellow-300
           rounded-full  blur-3xl opacity-70 md:animate-blob animation-delay-2000"
           ></div>
           <div
@@ -48,7 +48,7 @@ export default function Home() {
           ></div>
           <div
             className="fixed -z-50 -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
-        bg-[#29d1e7f1] dark:bg-[#7300d1a8] flex justify-center items-center
+        bg-[#29d1e7f1] dark:bg-[#7300d1a8] top-40 left-80 right-80 bottom-80
         rounded-full blur-2xl opacity-70 md:special-blob animation-delay-4000"
           ></div>
           <div
@@ -56,7 +56,7 @@ export default function Home() {
           rounded-full blur-3xl opacity-80 md:color-blob animation-delay-1000"
           ></div>
 
-      <section className="h-auto w-auto  ">
+      <section className="h-auto w-auto">
         <Banner />
       </section>
 
