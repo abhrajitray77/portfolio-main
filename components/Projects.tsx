@@ -59,7 +59,7 @@ const Projects = () => {
         <ProjCard
           name="Enactus SMIT"
           desc="The offcial website of Enactus SMIT built uing React.js, TailwindCSS, Framer Motion and Firebase."
-          vidSrc=""
+          vidSrc="https://github.com/abhrajitray77/Enactus-smit-final/assets/67530432/13e2f111-d406-4a1a-ab0c-bef16c067ffc"
           projLink="https://enactus-smit-final.vercel.app/"
           gitLink="https://github.com/abhrajitray77/Enactus-smit-final"
           tech={[
@@ -85,7 +85,7 @@ const Projects = () => {
           desc="An AI chatbot built using Next.js 13, Tailwind CSS and Typescript. Uses the OpenAI API to generate responses.
           Firebase for Google authentication for multiple users and Firestore for storing the user's chat history.
           (My openAI credits for api calls are over)"
-          vidSrc=""
+          vidSrc="https://github.com/abhrajitray77/PepeGPT/assets/67530432/f147517f-3b1e-472b-9ff3-278ab944790f"
           projLink="https://custom-chat-gpt-alpha.vercel.app/"
           gitLink="https://github.com/abhrajitray77/PepeGPT"
           tech={["Next.js", "TailwindCSS", "OpenAI API", "Firebase", "Typescript"]}
@@ -101,7 +101,7 @@ const Projects = () => {
           name="Netflix Landing Page Clone"
           desc="A Netflix landing page Clone built with Typescript, Next.js and TailwindCSS that uses the TMDB API
       to fetch the movie details and posters. "
-          vidSrc={netpic}
+          vidSrc="https://github.com/abhrajitray77/netflix_clone/assets/67530432/314845a0-068f-4cd8-b819-60acd6fa31e1"
           projLink="https://netflix-learn.vercel.app/"
           gitLink="https://github.com/abhrajitray77/netflix_clone"
           tech={["Next.js", "TailwindCSS", "REST API", "Typescript"]}
