@@ -1,14 +1,13 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Url } from "url";
+import { Url, UrlObject } from "url";
 
 type ProjCardProps = {
   name: string;
   desc: string;
   tech: string[];
-  imgSrc: StaticImageData;
-  altText: string;
+  vidSrc: string;
   projLink?: string;
   gitLink?: string;
 };
@@ -17,15 +16,14 @@ const ProjCard = ({
   name,
   desc,
   tech,
-  imgSrc,
-  altText,
+  vidSrc,
   projLink,
   gitLink,
 }: ProjCardProps) => {
   return (
     <div className="grid lg:grid-cols-2 place-items-start ">
       <div className="w-auto">
-        <Image src={imgSrc} alt={altText} width={400} height={220} />
+        <video src={vidSrc} autoPlay loop muted width={400} height={220} />
       </div>
       <div className="flex-col space-y-2 mt-4  ">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
