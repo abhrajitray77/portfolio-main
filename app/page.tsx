@@ -34,31 +34,27 @@ export default function Home() {
 
       {/* Background */}
 
-      <div className={`fixed inset-0 overflow-hidden -z-50 `}>
-        <div className="absolute grid grid-cols-2 place-items-center w-full  overflow-hidden ">
           <div
-            className="w-72 h-72 bg-purple-300 
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob"
+            className="fixed -z-50 top-0 left-0 w-72 h-72 bg-purple-300 
+        rounded-full blur-3xl opacity-70 md:animate-blob"
           ></div>
           <div
-            className=" w-80 h-80 bg-yellow-300
-          rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-2000"
+            className="fixed -z-50 top-40 right-0 w-[400px] h-[400px] bg-yellow-300
+          rounded-full  blur-3xl opacity-70 md:animate-blob animation-delay-2000"
           ></div>
           <div
-            className="w-[500px] h-[500px] bg-[#ff00b391]
-        rounded-full mix-blend-multiply filter blur-3xl opacity-70 md:animate-blob animation-delay-4000"
+            className="fixed bottom-0 left-0 -z-50 w-[500px] h-[500px] bg-[#ff00b391]
+        rounded-full blur-3xl opacity-70"
           ></div>
           <div
-            className="absolute -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
-        bg-[#29d1e7f1] dark:bg-[#7300d1a8] 
-        rounded-full mix-blend-normal filter blur-2xl opacity-70 md:special-blob animation-delay-7000"
+            className="fixed -z-50 -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
+        bg-[#29d1e7f1] dark:bg-[#7300d1a8] flex justify-center items-center
+        rounded-full blur-2xl opacity-70 md:special-blob animation-delay-4000"
           ></div>
           <div
-            className="absolute right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
-          rounded-full mix-blend-multiply filter blur-3xl opacity-80 md:color-blob animation-delay-1000"
+            className="fixed -z-50 right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
+          rounded-full blur-3xl opacity-80 md:color-blob animation-delay-1000"
           ></div>
-        </div>
-      </div>
 
       <section className="h-auto w-auto  ">
         <Banner />
