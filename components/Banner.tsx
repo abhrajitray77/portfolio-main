@@ -9,6 +9,7 @@ const Banner = () => {
       <div className="relative flex p-10 md:p-20 md:pt-5 ">
         <div className="p-6 h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
           <Image
+            loading="eager"
             className="drop-shadow-2xl dark:hidden"
             src={propic}
             height={1000}
@@ -16,6 +17,7 @@ const Banner = () => {
             alt="propic"
           />
           <Image
+            loading="eager"
             className="drop-shadow-2xl hidden dark:block"
             src={propicD}
             height={1000}
