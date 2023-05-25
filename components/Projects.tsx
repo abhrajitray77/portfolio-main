@@ -59,7 +59,7 @@ const Projects = () => {
         <ProjCard
           name="Enactus SMIT"
           desc="The offcial website of Enactus SMIT built uing React.js, TailwindCSS, Framer Motion and Firebase."
-          vidSrc="https://github.com/abhrajitray77/Enactus-smit-final/assets/67530432/13e2f111-d406-4a1a-ab0c-bef16c067ffc"
+          vidSrc="https://github-production-user-asset-6210df.s3.amazonaws.com/67530432/240332646-13e2f111-d406-4a1a-ab0c-bef16c067ffc.webm"
           projLink="https://enactus-smit-final.vercel.app/"
           gitLink="https://github.com/abhrajitray77/Enactus-smit-final"
           tech={[
@@ -76,7 +76,7 @@ const Projects = () => {
           name="Gpt-3 X Web Clipper Chrome extension"
           desc="ReactJS Chrome Extension with GPT-3 integration and Webpage text clipping functionality.
           (My openAI credits for api calls are over)"
-          vidSrc="https://github.com/abhrajitray77/reactjs-chrome-extension/assets/67530432/c9b8f1e0-50d9-4862-9705-a59603372920"
+          vidSrc="https://github-production-user-asset-6210df.s3.amazonaws.com/67530432/240313725-c9b8f1e0-50d9-4862-9705-a59603372920.webm"
           gitLink="https://github.com/abhrajitray77/PepeGPT"
           tech={["React.js", "TailwindCSS", "OpenAI API", "Typescript"]}
         />
@@ -85,7 +85,7 @@ const Projects = () => {
           desc="An AI chatbot built using Next.js 13, Tailwind CSS and Typescript. Uses the OpenAI API to generate responses.
           Firebase for Google authentication for multiple users and Firestore for storing the user's chat history.
           (My openAI credits for api calls are over)"
-          vidSrc="https://github.com/abhrajitray77/PepeGPT/assets/67530432/f147517f-3b1e-472b-9ff3-278ab944790f"
+          vidSrc="https://github-production-user-asset-6210df.s3.amazonaws.com/67530432/240339864-f147517f-3b1e-472b-9ff3-278ab944790f.webm"
           projLink="https://custom-chat-gpt-alpha.vercel.app/"
           gitLink="https://github.com/abhrajitray77/PepeGPT"
           tech={["Next.js", "TailwindCSS", "OpenAI API", "Firebase", "Typescript"]}
@@ -93,7 +93,7 @@ const Projects = () => {
         <ProjCard
           name="Doctor's Availability Checker"
           desc="A site that fetches data from a MongoDB database to show the schedule of doctors from various departments. "
-          vidSrc="https://github.com/abhrajitray77/appointment_checker/assets/67530432/ccc3a742-ada3-4877-a6ca-5e42ecd95758"
+          vidSrc="https://github-production-user-asset-6210df.s3.amazonaws.com/67530432/240319234-ccc3a742-ada3-4877-a6ca-5e42ecd95758.mp4"
           gitLink="https://github.com/abhrajitray77/appointment_checker"
           tech={["React.js", "TailwindCSS", "MongoDB", "Express.js", "Node.js", "Javascript"]}
         />
@@ -101,7 +101,7 @@ const Projects = () => {
           name="Netflix Landing Page Clone"
           desc="A Netflix landing page Clone built with Typescript, Next.js and TailwindCSS that uses the TMDB API
       to fetch the movie details and posters. "
-          vidSrc="https://github.com/abhrajitray77/netflix_clone/assets/67530432/314845a0-068f-4cd8-b819-60acd6fa31e1"
+          vidSrc="https://github-production-user-asset-6210df.s3.amazonaws.com/67530432/240340939-314845a0-068f-4cd8-b819-60acd6fa31e1.webm"
           projLink="https://netflix-learn.vercel.app/"
           gitLink="https://github.com/abhrajitray77/netflix_clone"
           tech={["Next.js", "TailwindCSS", "REST API", "Typescript"]}
