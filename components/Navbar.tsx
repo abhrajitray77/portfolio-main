@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion, spring } from "framer-motion";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+
 import ThemeButton from "./ThemeButton";
 
 function scrollToSection(event : any) {

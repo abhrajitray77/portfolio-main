@@ -1,9 +1,5 @@
 import React from "react";
 import ProjCard from "./ProjCard";
-import encpic from "../public/imgs/enc.gif";
-import netpic from "../public/imgs/net.gif";
-import pepepic from "../public/imgs/pepegpt.gif";
-import docpic from "../public/imgs/doc.gif";
 
 import { motion, Variants } from "framer-motion";
 
@@ -17,8 +13,6 @@ const card: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      delayChildren: 2,
-      staggerChildren: 0.2,
     },
   },
 };
@@ -77,7 +71,7 @@ const Projects = () => {
           desc="ReactJS Chrome Extension with GPT-3 integration and Webpage text clipping functionality.
           (My openAI credits for api calls are over)"
           vidSrc="https://github.com/abhrajitray77/reactjs-chrome-extension/assets/67530432/22754f00-0901-4126-85ec-211f320dcfff"
-          gitLink="https://github.com/abhrajitray77/PepeGPT"
+          gitLink="https://github.com/abhrajitray77/reactjs-chrome-extension"
           tech={["React.js", "TailwindCSS", "OpenAI API", "Typescript"]}
         />
         <ProjCard
