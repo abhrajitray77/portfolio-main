@@ -2,8 +2,7 @@ const ProjectDetails = [
   {
     name: "PixelPaws",
     desc: "PixelPaws is a game discovery platform that makes it easier for you to find the games that you want to play and also keep track of the ones you're done playing. It uses Appwrite Cloud for Authentication and Databases, and the RAWG API for fetching the game data. You can search for any game, filter by popularity, new releases, and genre, add to your library and save games to your wishlist.",
-    vidSrc:
-      "https://private-user-images.githubusercontent.com/67530432/247648521-9a5002d5-d90c-4526-831f-377bfba06c88.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg3MzcxMDk2LCJuYmYiOjE2ODczNzA3OTYsInBhdGgiOiIvNjc1MzA0MzIvMjQ3NjQ4NTIxLTlhNTAwMmQ1LWQ5MGMtNDUyNi04MzFmLTM3N2JmYmEwNmM4OC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYyMVQxODA2MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMjY2ZmY3ZTczNTA2N2M5MTI2NzJiM2FhMTE1NTAwMTBiN2JkMmZmMmM4ODA0YmE4MjBmYmMxYmNhNzZmZjEyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.F4rIYMBFB1atHqpaXksoF3VTU0NvdS2US3rY34DJJog",
+    vidSrc:"https://user-images.githubusercontent.com/67530432/247672067-2be4ee60-eaed-4056-bdbc-9ebf10ff3bfe.mp4",
     projLink: "https://pixelpaws.vercel.app/",
     gitLink: "https://github.com/abhrajitray77/pixel_paws",
     tech: [
