@@ -22,11 +22,13 @@ const ProjCard = ({
 }: ProjCardProps) => {
   return (
     <div className="grid lg:grid-cols-2  ">
-      <a href={projLink ? projLink : gitLink} target="_blank">
-        <div className="w-auto cursor-pointer relative">
-          <video src={vidSrc} autoPlay loop muted width={400} height={220} />
-        </div>
-      </a>
+      <div className="w-auto">
+        <a href={projLink ? projLink : gitLink} target="_blank"
+         className="cursor-pointer">
+          <video src={vidSrc} autoPlay loop muted width={400} height={220}
+          className="inline-block" />
+        </a>
+      </div>
       <div className="flex-col space-y-2 mt-4 lg:mt-0 ">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
           {name}

@@ -37,10 +37,10 @@ const Projects = () => {
       whileInView="onscreen"
       viewport={{ once: true }}
       variants={card}
-      className="bg-white/50 dark:bg-[#121212a4] p-8 rounded-2xl"
+      className="bg-white/50 dark:bg-[#121212a4] p-6 md:p-8 rounded-2xl"
     >
       {" "}
-      <h1 className="custom-h1 mx-auto mt-10 flex justify-center ">
+      <h1 className="custom-h1 mx-auto mt-6 md:mt-10 flex justify-center text-center ">
         Projects that I&apos;ve worked on
       </h1>
       <motion.div
@@ -48,7 +48,7 @@ const Projects = () => {
         whileInView="onscreen"
         //viewport={{ once: true }}
         variants={pcard}
-        className="flex-cols w-full mt-20  space-y-20"
+        className="flex-cols w-full mt-10 md:mt-20  space-y-20"
       >
         {ProjectDetails.map((proj, index) => (
           <ProjCard

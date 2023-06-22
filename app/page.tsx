@@ -36,11 +36,11 @@ export default function Home() {
 
           <div
             className="fixed -z-50 top-0 left-0 w-72 h-72 bg-purple-300 
-        rounded-full blur-3xl opacity-70 md:animate-blob"
+        rounded-full blur-3xl opacity-70 "
           ></div>
           <div
-            className="fixed -z-50 top-0 right-0 w-[400px] h-[400px] bg-yellow-300
-          rounded-full  blur-3xl opacity-70 md:animate-blob animation-delay-2000"
+            className="fixed -z-50 top-0 right-0 w-[400px] h-[400px] bg-teal-500
+          rounded-full  blur-3xl opacity-70"
           ></div>
           <div
             className="fixed bottom-0 left-0 -z-50 w-[500px] h-[500px] bg-[#ff00b391]
@@ -49,11 +49,11 @@ export default function Home() {
           <div
             className="fixed -z-50 -inset-y-0 w-[500px] h-[500px] md:w-[700px] md:h-[700px]
         bg-[#29d1e7f1] dark:bg-[#7300d1a8] top-40 left-80 right-80 bottom-80
-        rounded-full blur-2xl opacity-70 md:special-blob animation-delay-4000"
+        rounded-full blur-2xl opacity-70 md:animate-special_blob animation-delay-4000"
           ></div>
           <div
-            className="fixed -z-50 right-0 bottom-0 w-80 h-80 bg-[#7300d1a8]
-          rounded-full blur-3xl opacity-80 md:color-blob animation-delay-1000"
+            className="fixed -z-50 right-0 bottom-0 w-80 h-80 dark:bg-[#00aeff] bg-[#00ffb3] 
+          rounded-full blur-3xl opacity-80"
           ></div>
 
       <section className="h-auto w-auto">
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       {/* About me */}
-      <article className="mx-10 my-28 md:mx-20 lg:mx-32">
+      <article className="mx-6 my-28 md:mx-20 lg:mx-32">
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
