@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       {/* About me */}
-      <article className="mx-10 my-28 md:mx-20 lg:mx-32">
+      <article className="mx-6 my-28 md:mx-20 lg:mx-32">
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
