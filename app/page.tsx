@@ -149,7 +149,7 @@ export default function Home() {
           <div className=" space-y-2">
             <h3 className="text-xl font-medium">Socials</h3>
             <a
-              href="https://www.linkedin.com/in/abhrajit-ray-b6a97721a/"
+              href="https://www.linkedin.com/in/abhrajitray77/"
               className="contact-item"
               target="_blank"
               rel="noopener noreferrer"
