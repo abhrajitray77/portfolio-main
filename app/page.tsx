@@ -78,13 +78,11 @@ export default function Home() {
               </span>
             </h1>
             <p className="md:text-2xl font-medium pt-10 leading-relaxed ">
-              I&apos;m a frontend web developer who specializes in creating fast
+              I&apos;m a Full Stack developer who specializes in creating fast
               and scalable websites with responsive design and great UI.
-              <br />
               I use Next.js, React, and Tailwind CSS, along with technologies
-              like Firebase, Supabase and MongoDB.
-              <br />
-              <br />
+              like Firebase, Supabase, Appwrite and MongoDB. I'm exploring some AI/Ml
+              and a bit of Azure DevOps as well.
               Let&apos;s connect and work on something cool together!
             </p>
           </div>
