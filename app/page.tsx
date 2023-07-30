@@ -81,7 +81,7 @@ export default function Home() {
               I&apos;m a Full Stack developer who specializes in creating fast
               and scalable websites with responsive design and great UI.
               I use Next.js, React, and Tailwind CSS, along with technologies
-              like Firebase, Supabase, Appwrite and MongoDB. I'm exploring some AI/Ml
+              like Firebase, Supabase, Appwrite and MongoDB. I&apos;m exploring some AI/Ml
               and a bit of Azure DevOps as well.
               Let&apos;s connect and work on something cool together!
             </p>
