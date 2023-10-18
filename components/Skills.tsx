@@ -2,20 +2,136 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import nextjs from "../public/imgs/skills/nextjs.svg";
+import react from "../public/imgs/skills/react.svg";
+import express from "../public/imgs/skills/express.svg";
+import tensorflow from "../public/imgs/skills/tensorflow.svg";
+import tailwindcss from "../public/imgs/skills/tailwindcss.svg";
 
-const skillHeader: Variants = {
-  offscreen: {
-    translateX: -200,
-    opacity: 0,
+const skillsData = [
+  {
+    name: "React.js",
+    type: "frameworks",
+    light: react,
+    dark: "path/to/dark/react-icon.png",
   },
-  onscreen: {
-    translateX: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-    },
+  {
+    name: "Next.js",
+    type: "frameworks",
+    light: nextjs,
+    dark: "/public/imgs/skills/nextjs.svg",
   },
-};
+  {
+    name: "Express",
+    type: "frameworks",
+    light: express,
+    dark: "path/to/dark/express-icon.png",
+  },
+  {
+    name: "TensorFlow",
+    type: "frameworks",
+    light: tensorflow,
+    dark: "path/to/dark/tensorflow-icon.png",
+  },
+  {
+    name: "Tailwind CSS",
+    type: "frameworks",
+    light: tailwindcss,
+    dark: "path/to/dark/tailwindcss-icon.png",
+  },
+  {
+    name: "TypeScript",
+    type: "Languages",
+    light: "path/to/light/typescript-icon.png",
+    dark: "path/to/dark/typescript-icon.png",
+  },
+  {
+    name: "JavaScript",
+    type: "Languages",
+    light: "path/to/light/javascript-icon.png",
+    dark: "path/to/dark/javascript-icon.png",
+  },
+  {
+    name: "Python",
+    type: "Languages",
+    light: "path/to/light/python-icon.png",
+    dark: "path/to/dark/python-icon.png",
+  },
+  {
+    name: "C++/C",
+    type: "Languages",
+    light: "path/to/light/cpp-icon.png",
+    dark: "path/to/dark/cpp-icon.png",
+  },
+  {
+    name: "PostgreSQL",
+    type: "Databases",
+    light: "path/to/light/postgresql-icon.png",
+    dark: "path/to/dark/postgresql-icon.png",
+  },
+  {
+    name: "MongoDB",
+    type: "Databases",
+    light: "path/to/light/mongodb-icon.png",
+    dark: "path/to/dark/mongodb-icon.png",
+  },
+  {
+    name: "MySQL",
+    type: "Databases",
+    light: "path/to/light/mysql-icon.png",
+    dark: "path/to/dark/mysql-icon.png",
+  },
+  {
+    name: "Azure",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/azure-icon.png",
+    dark: "path/to/dark/azure-icon.png",
+  },
+  {
+    name: "AWS",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/aws-icon.png",
+    dark: "path/to/dark/aws-icon.png",
+  },
+  {
+    name: "Appwrite",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/appwrite-icon.png",
+    dark: "path/to/dark/appwrite-icon.png",
+  },
+  {
+    name: "Firebase",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/firebase-icon.png",
+    dark: "path/to/dark/firebase-icon.png",
+  },
+  {
+    name: "Supabase",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/supabase-icon.png",
+    dark: "path/to/dark/supabase-icon.png",
+  },
+  {
+    name: "Kubernetes",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/kubernetes-icon.png",
+    dark: "path/to/dark/kubernetes-icon.png",
+  },
+  {
+    name: "Docker",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/docker-icon.png",
+    dark: "path/to/dark/docker-icon.png",
+  },
+  {
+    name: "GitLab",
+    type: "Cloud Services and DevOps",
+    light: "path/to/light/gitlab-icon.png",
+    dark: "path/to/dark/gitlab-icon.png",
+  },
+];
+
+
 const skills: Variants = {
   offscreen: {
     scale: 0.9,
@@ -29,172 +145,42 @@ const skills: Variants = {
 
 const Skills = () => {
   return (
-    <div>
-      <motion.h1
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={skillHeader}
-        className="custom-h1"
-      >
-        Technologies that I love working with --&gt;
-      </motion.h1>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={skills}
-        className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
-            place-items-start "
-      >
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
-          width={300}
-          height={100}
-        />
-      </motion.div>
-      <div className="mt-12">
-        <motion.h1
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true }}
-          variants={skillHeader}
-          className="custom-h1"
-        >
-          Skills that come in handy --&gt;
-        </motion.h1>
-        <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true }}
-          variants={skills}
-          className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
-            place-items-start"
-        >
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=EEF37B"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine"
-            width={300}
-            height={100}
-          />
-        </motion.div>
+    <motion.div
+    variants={skills}
+    initial="offscreen"
+    animate="onscreen"
+    className="flex flex-col justify-center"
+    >
+      {/*frameworks*/}
+      <div>
+        <h2 className="text-3xl font-bold">Frameworks</h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+          {skillsData.map((skill, i) => {
+            if (skill.type === "frameworks") {
+              return (
+                <div className=""
+                key={i}>
+                  <Image
+                    className="w-10 h-10 mx-auto"
+                    src={skill.light}
+                    alt={skill.name}
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center">{skill.name}</p>
+                </div>
+              );
+            }
+          })}
+        </div>
+
       </div>
-    </div>
+
+      <div>
+
+      </div>
+      
+    </motion.div>
   );
 };
 
