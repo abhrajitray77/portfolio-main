@@ -68,10 +68,10 @@ const Projects = () => {
         ))}
       </motion.div>
       </div>
-      <div className="absolute bottom-0 left-[32%] md:left-[42%] z-50 flex flex-col
-      space-y-1 m-4 ">
-        <ArrowDownCircleIcon className="mx-auto mt-10 animate-bounce w-10 h-10 cursor-pointer " />
-        <h2 className="font-medium dark:text-gray-100text-gray-900">Wanna see more?</h2>
+      <div className="absolute bottom-0 left-0 right-0 ml-auto mr-auto z-50 flex flex-col
+      space-y-1 mb-4 ">
+        <ArrowDownCircleIcon className="mx-auto mt-10 animate-bounce w-10 h-10 cursor-pointer" />
+        <h2 className="font-medium dark:text-gray-100 text-gray-900 mx-auto">Wanna see more?</h2>
       </div>
       <div className="absolute bottom-0 w-full h-36 bg-gradient-to-t 
       from-white/50 dark:from-black/50 backdrop-blur-sm rounded-b-2xl"></div>
