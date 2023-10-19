@@ -39,7 +39,7 @@ const Skills = () => {
                     width={100}
                     height={100}
                   />
-                  <p className="text-center">{skill.name}</p>
+                  <p className="text-center font-medium p-2">{skill.name}</p>
                 </div>
               );
             }
@@ -63,7 +63,7 @@ const Skills = () => {
                     width={100}
                     height={100}
                   />
-                  <p className="text-center">{skill.name}</p>
+                  <p className="text-center font-medium p-2">{skill.name}</p>
                 </div>
               );
             }
@@ -88,7 +88,7 @@ const Skills = () => {
                     width={100}
                     height={100}
                   />
-                  <p className="text-center">{skill.name}</p>
+                  <p className="text-center font-medium p-2">{skill.name}</p>
                 </div>
               );
             }
@@ -113,7 +113,7 @@ const Skills = () => {
                     width={100}
                     height={100}
                   />
-                  <p className="text-center">{skill.name}</p>
+                  <p className="text-center font-medium p-2">{skill.name}</p>
                 </div>
               );
             }
