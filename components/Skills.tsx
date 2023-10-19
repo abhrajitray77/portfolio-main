@@ -2,20 +2,8 @@
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import skillsData from "../utils/skillsData"
 
-const skillHeader: Variants = {
-  offscreen: {
-    translateX: -200,
-    opacity: 0,
-  },
-  onscreen: {
-    translateX: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-    },
-  },
-};
 const skills: Variants = {
   offscreen: {
     scale: 0.9,
@@ -29,172 +17,116 @@ const skills: Variants = {
 
 const Skills = () => {
   return (
-    <div>
-      <motion.h1
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={skillHeader}
-        className="custom-h1"
-      >
-        Technologies that I love working with --&gt;
-      </motion.h1>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={skills}
-        className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
-            place-items-start "
-      >
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
-          width={300}
-          height={100}
-        />
-        <Image
-          className="w-40 my-auto"
-          alt=""
-          src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
-          width={300}
-          height={100}
-        />
-      </motion.div>
-      <div className="mt-12">
-        <motion.h1
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true }}
-          variants={skillHeader}
-          className="custom-h1"
-        >
-          Skills that come in handy --&gt;
-        </motion.h1>
-        <motion.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true }}
-          variants={skills}
-          className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-4 mt-12
-            place-items-start"
-        >
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/Krita-203759?style=for-the-badge&logo=krita&logoColor=EEF37B"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white"
-            width={300}
-            height={100}
-          />
-          <Image
-            className="w-40 my-auto"
-            alt=""
-            src="https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine"
-            width={300}
-            height={100}
-          />
-        </motion.div>
+    <motion.div
+    variants={skills}
+    initial="offscreen"
+    animate="onscreen"
+    className="flex flex-col justify-center space-y-4"
+    >
+      {/*frameworks*/}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-bold">Frameworks</h2>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-2 place-items-center">
+          {skillsData.map((skill, i) => {
+            if (skill.type === "frameworks") {
+              return (
+                <div className=""
+                key={i}>
+                  <Image
+                    className="w-10 h-10 mx-auto"
+                    src={skill.light}
+                    alt={skill.name}
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center font-medium p-2">{skill.name}</p>
+                </div>
+              );
+            }
+          })}
+        </div>
+
       </div>
-    </div>
+      {/*Languages*/}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-bold">Languages</h2>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-2 place-items-center">
+          {skillsData.map((skill, i) => {
+            if (skill.type === "Languages") {
+              return (
+                <div className=""
+                key={i}>
+                  <Image
+                    className="w-10 h-10 mx-auto"
+                    src={skill.light}
+                    alt={skill.name}
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center font-medium p-2">{skill.name}</p>
+                </div>
+              );
+            }
+          })}
+        </div>
+
+      </div>
+
+      {/*databases*/}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-bold">Databases</h2>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-2 place-items-center">
+          {skillsData.map((skill, i) => {
+            if (skill.type === "Databases") {
+              return (
+                <div className=""
+                key={i}>
+                  <Image
+                    className="w-10 h-10 mx-auto"
+                    src={skill.light}
+                    alt={skill.name}
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center font-medium p-2">{skill.name}</p>
+                </div>
+              );
+            }
+          })}
+        </div>
+
+      </div>
+
+      {/*cloud*/}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-bold">Cloud Services and DevOps</h2>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-4 place-items-center">
+          {skillsData.map((skill, i) => {
+            if (skill.type === "Cloud Services and DevOps") {
+              return (
+                <div className=""
+                key={i}>
+                  <Image
+                    className="w-10 h-10 mx-auto"
+                    src={skill.light}
+                    alt={skill.name}
+                    width={100}
+                    height={100}
+                  />
+                  <p className="text-center font-medium p-2">{skill.name}</p>
+                </div>
+              );
+            }
+          })}
+        </div>
+
+      </div>
+
+      <div>
+
+      </div>
+      
+    </motion.div>
   );
 };
 
