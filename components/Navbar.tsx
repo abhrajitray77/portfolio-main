@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import ThemeButton from "./ThemeButton";
@@ -19,6 +20,7 @@ const Navbar = () => {
   return (
     <nav className="w-auto flex justify-end mr-3 md:mr-10 z-50">
       <ul className="hidden md:flex items-center space-x-4 md:space-x-10 py-8 font-bold">
+        <Link href="/blog"><li className="nav-item" >Blog</li></Link>
         <li className="nav-item" ><a href="#about" onClick={scrollToSection}>About Me </a></li>
         <li className="nav-item" ><a href="#skills" onClick={scrollToSection}>Skills </a></li>
         <li className="nav-item" ><a href="#proj" onClick={scrollToSection}>Projects </a></li>
