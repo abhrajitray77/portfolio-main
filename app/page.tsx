@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
 import { motion, Variants } from "framer-motion";
+import Mail from "@/components/Mail";
 
 
 const cardVariants: Variants = {
@@ -142,6 +143,7 @@ export default function Home() {
               </svg>
               <span className="">abhrajitray77@gmail.com</span>
             </div>
+            <Mail/>
           </div>
           {/*  Socials  */}
           <div className=" space-y-2">

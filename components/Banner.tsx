@@ -34,7 +34,7 @@ const Banner = () => {
           </h1>
           <h1 className="text-[3.8rem] md:text-[5.8rem] lg:text-[8rem]">RAY</h1>
           <h2 className="lg:text-xl">
-            Full Stack Developer | CS Undergrad | Open Source Contributor
+            Full Stack Developer | Tech Enthusiast | Building cool stuff everyday!
           </h2>
         </div>
       </div>
