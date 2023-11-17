@@ -52,7 +52,7 @@ const Mail = () => {
             required
             type="text"
             name="user_name"
-            className="p-2 rounded-md outline-none"
+            className="p-2 rounded-md outline-none opacity-75"
           />
         </div>
         <div className="flex flex-col space-y-1">
@@ -62,7 +62,7 @@ const Mail = () => {
             type="text"
             name="user_contact"
             placeholder="Twitter? LinkedIn? or just E-mail?"
-            className="p-2 rounded-md outline-none"
+            className="p-2 rounded-md outline-none opacity-75"
           />
         </div>
         <div className="flex flex-col space-y-1">
@@ -73,7 +73,7 @@ const Mail = () => {
             placeholder="Type your message here!"
             className="p-2 rounded-md resize-none w-full h-36 overflow-y-scroll scrollbar-thin
            scrollbar-thumb-gray-500 dark:scrollbar-thumb-gray-400 scrollbar-track-transparent 
-           scrollbar-thumb-rounded-full outline-none"
+           scrollbar-thumb-rounded-full outline-none opacity-75"
           />
         </div>
         <button
@@ -96,7 +96,8 @@ const Mail = () => {
             <AnimatePresence>
             <PaperAirplaneIcon
               className="w-6 h-6 p-1 mx-3 -rotate-45 group-hover:rotate-0 transition
-            duration-200 group-hover:text-green-700 dark:group-hover:text-green-300"
+            duration-200 group-hover:text-green-700 dark:group-hover:text-green-300
+            opacity-75 group-hover:opacity-100"
             />
             </AnimatePresence>
           )}
