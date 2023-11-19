@@ -7,7 +7,7 @@ const ProjectDetails = [
     gitLink: "https://github.com/abhrajitray77/pixel_paws",
     tech: [
       "Next.js 13",
-      "TailwindCSS",
+      "Tailwind CSS",
       "REST API",
       "Typescript",
       "Appwrite",
@@ -23,7 +23,7 @@ const ProjectDetails = [
     gitLink: "https://github.com/abhrajitray77/Enactus-smit-final",
     tech: [
       "React.js",
-      "TailwindCSS",
+      "Tailwind CSS",
       "Framer-Motion",
       "React-Router",
       "Firebase",
@@ -33,20 +33,20 @@ const ProjectDetails = [
   },
   {
     name: "Gpt-3 X Web Clipper Chrome extension",
-    desc: "ReactJS Chrome Extension with GPT-3 integration and Webpage text clipping functionality. (My OpenAI credits for API calls are over)",
+    desc: "ReactJS Chrome Extension with GPT-3 integration and Webpage text clipping functionality.",
     vidSrc:
       "https://github.com/abhrajitray77/reactjs-chrome-extension/assets/67530432/22754f00-0901-4126-85ec-211f320dcfff",
     gitLink: "https://github.com/abhrajitray77/reactjs-chrome-extension",
-    tech: ["React.js", "TailwindCSS", "OpenAI API", "Typescript"],
+    tech: ["React.js", "Tailwind CSS", "OpenAI API", "Typescript"],
   },
   {
     name: "GPT-3 Chatbot using OpenAI API",
-    desc: "An AI chatbot built using Next.js 13, Tailwind CSS, and Typescript. Uses the OpenAI API to generate responses. Firebase for Google authentication for multiple users and Firestore for storing the user's chat history. (My OpenAI credits for API calls are over)",
+    desc: "An AI chatbot built using Next.js 13, Tailwind CSS, and Typescript. Uses the OpenAI API to generate responses. Firebase for Google authentication for multiple users and Firestore for storing the user's chat history.",
     vidSrc:
       "https://github.com/abhrajitray77/PepeGPT/assets/67530432/aacdc9ed-a587-47a6-9f61-c365af078375",
     projLink: "https://custom-chat-gpt-alpha.vercel.app/",
     gitLink: "https://github.com/abhrajitray77/PepeGPT",
-    tech: ["Next.js", "TailwindCSS", "OpenAI API", "Firebase", "Typescript"],
+    tech: ["Next.js", "Tailwind CSS", "OpenAI API", "Firebase", "Typescript"],
   },
   {
     name: "Doctor's Availability Checker",
@@ -56,7 +56,7 @@ const ProjectDetails = [
     gitLink: "https://github.com/abhrajitray77/appointment_checker",
     tech: [
       "React.js",
-      "TailwindCSS",
+      "Tailwind CSS",
       "MongoDB",
       "Express.js",
       "Node.js",
@@ -70,7 +70,7 @@ const ProjectDetails = [
       "https://github.com/abhrajitray77/netflix_clone/assets/67530432/7e04df5e-bf01-477d-91ea-9d2b4eb16fb3",
     projLink: "https://netflix-learn.vercel.app/",
     gitLink: "https://github.com/abhrajitray77/netflix_clone",
-    tech: ["Next.js", "TailwindCSS", "REST API", "Typescript"],
+    tech: ["Next.js", "Tailwind CSS", "REST API", "Typescript"],
   },
 ];
 
