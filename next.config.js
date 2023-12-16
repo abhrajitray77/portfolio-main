@@ -6,7 +6,7 @@ const nextConfig = {
   },
 
   async rewrites() {
-    return [
+    return (
       {
         source: "/blog",
         destination: "https://starter-kit-drab-seven.vercel.app/blog", 
@@ -14,7 +14,7 @@ const nextConfig = {
       {
         source: "/blog/:path*",
         destination: "https://starter-kit-drab-seven.vercel.app/blog/:path*",
-    ];
+    );
   },
 }
 
