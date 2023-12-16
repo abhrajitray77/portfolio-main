@@ -4,9 +4,8 @@ const nextConfig = {
     domains: ['img.shields.io'],
     dangerouslyAllowSVG: true,
   },
-}
 
-async rewrites() {
+  async rewrites() {
     return [
       {
         source: "/blog",
@@ -17,5 +16,6 @@ async rewrites() {
         destination: "https://starter-kit-drab-seven.vercel.app/blog/:path*",
     ];
   },
+}
 
 module.exports = nextConfig
